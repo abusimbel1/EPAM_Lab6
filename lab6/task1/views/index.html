@@ -1,0 +1,100 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab6.1</title>
+</head>
+<body>
+     <form  id ="form" action='/' method="post" enctype="multipart/form-data">
+                <span class="property"><p>Зміна розмірів:</p> </span>
+            <div class="row">
+                    
+                    <div class="box1"> 
+                            <span class = "widthText"><p>Ширина(width)</p></span>  <input type= "text" name="width" placeholder = "   Width..." id="width" onfocusout="validateWidth()">
+                    </div> 
+            </div>
+            <div class="row">
+                <div class="box1"> 
+                        <span class = "heightText"><p>Висота(height)</p></span> <input type= "text" name="height" placeholder = "   Height..." id="height" onfocusout="validateHeight()"> 
+                </div>
+            </div>
+            <div class="row">
+                    <div class="box1"> 
+                    <span class = "borderText"><p>Товщина рамки</p></span><input type= "text" name="border" placeholder = "   Border width(max 9)..." id = "border" onfocusout="validateBorder()">
+                    </div>
+            </div>
+            <button type ="submit" value='login'>  Застосувати параметри</button>
+           
+    </form> 
+    <form class='formWithValidation'>
+            <div>
+              <div>
+                <label>From:</label>
+              </div>
+              <div>
+                <input type='text' class='from field' />
+              </div>
+            </div>
+            <div>
+              <div>
+                <label>Password:</label>
+              </div>
+              <div>
+                <input type='password' class='password field' />
+              </div>
+            </div>
+            <div>
+    
+            <label>Message:</label>
+            </div>
+            <div>
+            <textarea class='message field'></textarea>
+                         
+            </div>
+            <div>
+            <input type='submit' class='validateBtn' value='Validate'/>
+          </form>
+    <script src="./script.js"></script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- <script src=""></script> -->
+</head>
+<body>
+        <div class="form__wrapper">
+                <form id="register" >
+                   <h1>Регистрация</h1>
+                   <div class="fields field1">
+                      <label for="login">Ваш логин:</label>
+                      <input type="text" id="login" value="" placeholder="AmateR">
+                      <span class="dot">*</span>
+                   </div>
+                   <div class="fields field2">
+                      <label for="email">Ваш e-mail:</label>
+                      <input type="text" id="email" value="" placeholder="youmail@domain.ru">
+                      <span class="dot">*</span>
+                   </div>
+                   <div class="fields field3">
+                        <label for="text">Введите текст:</label>
+                        <br>
+                        <textarea value="" id="textarea" placeholder="Your message"> </textarea>
+                        <span class ="dot">*</span>
+                   </div>
+              
+              
+                   <button type="submit" name="button" id="send">Отправить</button>
+                </form>
+             </div>
+             <script src="./script.js"></script>
+</body>
+</html>
